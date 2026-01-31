@@ -1,0 +1,16 @@
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.git
+.gitignore
+best_model.pth
+*.onnx
+.venv/
+venv/
+ENV/
+.DS_Store
+*.swp
+*.swo

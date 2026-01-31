@@ -1,0 +1,10 @@
+# Virtual environment
+.venv/
+__pycache__/
+
+# Large model files
+*.pth
+*.onnx
+
+# OS junk
+.DS_Store
