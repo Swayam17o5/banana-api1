@@ -91,4 +91,11 @@ async def predict_image_endpoint(file: UploadFile = File(...)):
     except Exception as e:
         # Log the error and return a 500 status message
         print(f"Inference Error: {e}")
+
         return {"error": "Prediction failed due to server error."}
+import os
+import uvicorn
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8080))
+    uvicorn.run("app:app", host="0.0.0.0", port=port)
